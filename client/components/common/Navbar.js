@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import { Collapse, Container, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap'
+import { Collapse, Container, Nav, Navbar, NavbarToggler, NavItem, NavLink } from 'reactstrap'
 import Link from 'next/link'
 
 
@@ -13,9 +13,9 @@ const Navigation = () => {
     <Fragment>
       <Navbar color="danger" dark expand="md" className="p-3">
         <Container>
-          <Link href="/">
-            <NavbarBrand className="text-info brand">LT</NavbarBrand>
-          </Link>
+          <div className="navbar-brand brand">
+            <Link href="/">LT</Link>
+          </div>
           <NavbarToggler color="primary" onClick={toggle} />
           <Collapse color="warning" isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
