@@ -1,12 +1,19 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 
 
-// html,
-// body {
-//   padding: 0;
-//   margin: 0;
-// }
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 
+.nav-links {
+  cursor: pointer;
+}
+
+.brand {
+  cursor: pointer;
+}
 
 // * {
 //   box-sizing: border-box;

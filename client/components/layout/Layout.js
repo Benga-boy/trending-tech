@@ -3,11 +3,17 @@ import PropTypes from 'prop-types'
 import Navigation from '../common/Navbar'
 import { Container, Row } from 'reactstrap'
 
+
+
+
+
 const Layout = ({ children }) => {
+
+
   return (
     <Fragment>
       <Navigation />
-      <Container>
+      <Container className="py-5">
         <Row>
           {children}
         </Row>
