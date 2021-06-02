@@ -16,14 +16,13 @@ const Register = () => {
     setFormText({ ...formText, [e.target.name]: e.target.value })
   }
 
-  console.log(Boolean(formText.error))
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log('Form: Submitted', formText)
-    if (name.length < 4) {
-      setFormText({ ...formText, error: 'Please add name with at least 5 characters' })
+    if (name.length !== 3) {
+      console.assert('Must be 3 letters long')
     }
+    console.log(name.length)
     setFormText({
       name: '',
       email: '',
